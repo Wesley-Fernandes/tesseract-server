@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express, { Request, Response } from "express";
 import Tesseract from "../utils/Tesseract";
 import Multers from "../utils/Multers";
@@ -6,7 +7,7 @@ import cors from "cors";
 
 export default class Server {
   private readonly server = express();
-  private readonly port = 4040;
+  private readonly port = process.env.PORT || 4040;
   private readonly tesseract = new Tesseract();
   private multers = new Multers();
   private bardo = new Bardo();
