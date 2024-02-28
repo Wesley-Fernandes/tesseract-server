@@ -1,5 +1,6 @@
 import "dotenv/config";
-import express, { Request, Response } from "express";
+import express from "express";
+import { Request, Response } from "express";
 import Tesseract from "../utils/Tesseract";
 import Multers from "../utils/Multers";
 import Bardo from "../utils/Bardo";
