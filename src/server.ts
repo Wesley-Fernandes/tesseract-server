@@ -1,4 +1,4 @@
-import Server from "./configuration/Server";
+import * as Server from "./configuration/Server";
 
-const server = new Server();
+const server = new Server.default();
 server.execute();
